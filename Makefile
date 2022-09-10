@@ -28,8 +28,8 @@ update-submodules:
 
 ##### Docker #####
 docker-server:
-	@printf $(COLOR) "Building docker image temporalio/server:$(DOCKER_IMAGE_TAG)..."
-	docker build . -f server.Dockerfile -t temporalio/server:$(DOCKER_IMAGE_TAG)
+	@printf $(COLOR) "Building docker image gtoonstra/server:$(DOCKER_IMAGE_TAG)..."
+	docker build . -f server.Dockerfile -t gtoonstra/server:$(DOCKER_IMAGE_TAG)
 
 docker-admin-tools: docker-server
 	@printf $(COLOR) "Build docker image temporalio/admin-tools:$(DOCKER_IMAGE_TAG)..."
